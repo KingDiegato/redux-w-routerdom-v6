@@ -34,7 +34,7 @@ const NavigationBar = () => {
 
                     <h4 style={{margin: '10% 0% 0% 0%'}}>
                     <Link className='link' to='/faq'>       FAQ         </Link>
-                    <Link className='link' to='/search'>    Search      </Link>
+                    <Link className='link' to='/video'>     Video       </Link>
                     <Link className='link' to='/about'>     About us    </Link>
                     <Link className='link' to='/todoList'>  <span style={yellowBird}>To</span>Do <span style={{color: '#EDBD14'}}>List</span>   </Link>
                     </h4>

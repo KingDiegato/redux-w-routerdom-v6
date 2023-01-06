@@ -5,24 +5,26 @@ import TodoFormContainer from '../containers/todoFormContainer';
 import FilterOption from './filterOption';
 
 const TodoList = ({todos, onTodoClick }) => {
-    return (
-        <div>
-            <h1>
-                Your TODOS
-            </h1>
-            <ul style={{
-                display: 'grid',
+
+    const ulStyle = {
+        display: 'grid',
                 width: '30rem',
                 height: '20rem',
                 alignContent: 'flex-start',
                 overflow: 'hidden',
                 overflowY: 'auto',
-            }}>
+    }
+    return (
+        <div>
+            <h1>
+                Your TODOS
+            </h1>
+            <ul style={ulStyle}>
                 {todos.map((todo, index) => (
                     
                         <Todo key={index} {...todo}
                         onClick={() => onTodoClick(todo.id)}
-                        ></Todo>
+                        />
                     
                 ))}
             </ul>

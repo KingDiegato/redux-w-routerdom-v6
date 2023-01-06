@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 
 //! Pages
 import Home from './pages/home';
-import Search from './pages/search';
+import Video from './pages/video';
 import Faq from './pages/faq';
 import About from './pages/about';
 import TodosContainer from './components/containers/todosContainer';
@@ -19,7 +19,7 @@ function App() {
       <main className="App-main">
         <Routes>
           <Route path='/' element={<Home/>}></Route>
-          <Route path='/search' element={<Search/>}></Route>
+          <Route path='/video' element={<Video/>}></Route>
           <Route path='/faq' element={<Faq/>}></Route>
           <Route path='/about' element={<About/>}></Route>
           <Route path='/todoList' element={<TodosContainer/>}></Route>
