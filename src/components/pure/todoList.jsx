@@ -14,8 +14,11 @@ const TodoList = ({todos, onTodoClick }) => {
                 overflow: 'hidden',
                 overflowY: 'auto',
     }
+    const marginBottom = {
+        marginBottom: '50px'
+    }
     return (
-        <div>
+        <div style={marginBottom}>
             <h1>
                 Your TODOS
             </h1>
